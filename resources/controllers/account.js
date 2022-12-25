@@ -16,6 +16,7 @@ exports.signUp = async (req, res) => {
 
     const hashedPassword = await bcrypt.hash(password, 8);
 
+
     await pool.request()
       .input('accountID', v4())
       .input('name', name)
@@ -23,12 +24,14 @@ exports.signUp = async (req, res) => {
       input('password', hashedPassword)
     .execute('usp_accountRegister')
 
+    console.log('working')
+
     return res.status(200).json({
       msg: 'account created successfully'
     })
   } catch (e) {
     return res.status(500).json({
-      msg: error
+      msg: e
     })
   }
 };
