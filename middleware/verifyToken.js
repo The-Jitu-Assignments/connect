@@ -3,7 +3,7 @@ const dotenv = require('dotenv').config();
 const { SECRET } = process.env;
 
 
-exports.verifyToken = async (req, res) => {
+exports.verifyToken = async (req, res, next) => {
   try {
     const tokenHeader = req.headers.authorization;
     if (tokenHeader) {
@@ -20,4 +20,5 @@ exports.verifyToken = async (req, res) => {
       msg: error
     })
   }
+  next();
 }
