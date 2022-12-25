@@ -98,11 +98,15 @@ exports.sendAConnectionRequest = async (req, res) => {
 exports.acceptOrDeclineConnectionRequest = async (req, res) => {
   try {
     const { connectionId } = req.params;
-    const { status } = req.body;
+    const { status, toUser } = req.body;
+    const { accountID } = req.user;
     const pool = await sql.connect(sqlConfig);
 
     if (connectionId) {
       await pool.request()
+        .input('connectionId', connectionId)
+        .input('fromUser', accountID)
+        .input('toUser', toUser)
         .input('status', status)
       .execute('usp_createOrUpdateConnection')
 
