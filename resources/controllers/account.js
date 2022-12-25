@@ -94,3 +94,29 @@ exports.sendAConnectionRequest = async (req, res) => {
     })
   }
 }
+
+exports.acceptOrDeclineConnectionRequest = async (req, res) => {
+  try {
+    const { connectionId } = req.params;
+    const { status } = req.body;
+    const pool = await sql.connect(sqlConfig);
+
+    if (connectionId) {
+      await pool.request()
+        .input('status', status)
+      .execute('usp_createOrUpdateConnection')
+
+      return res.status({
+        msg: 'Update was successful'
+      })
+    } else {
+      return res.status(404).json({
+        msg: `Notification with an id of ${connectionId} is not found`
+      })
+    }
+  } catch (error) {
+    return res.status(500).json({
+      msg: error
+    })
+  }
+}
