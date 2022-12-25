@@ -110,7 +110,7 @@ exports.acceptOrDeclineConnectionRequest = async (req, res) => {
         .input('status', status)
       .execute('usp_createOrUpdateConnection')
 
-      return res.status({
+      return res.status(200).json({
         msg: 'Update was successful'
       })
     } else {
