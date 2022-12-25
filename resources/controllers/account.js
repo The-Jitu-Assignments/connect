@@ -71,3 +71,26 @@ exports.login = async (req, res) => {
     })
   }
 };
+
+exports.sendAConnectionRequest = async (req, res) => {
+  try {
+    const { toUser } = req.body;
+    const { accountID } = req.user;
+    const pool = await sql.connect(sqlConfig);
+
+    await pool.request()
+      .input('connectionId', v4())
+      .input('fromUser', accountID)
+      .input('toUser', toUser)
+      .input('status', 0)
+    .execute('usp_createOrUpdateConnection');
+
+    return res.status(200).json({
+      msg: 'request sent successfully'
+    })
+  } catch (error) {
+    return res.status(500).json({
+      msg: error
+    })
+  }
+}
