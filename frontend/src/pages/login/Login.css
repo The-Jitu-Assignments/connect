@@ -1,3 +1,32 @@
 .login-container {
-  background-color: violet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login-form { 
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--grey);
+  padding: 20px;
+  width: 40%;
+  height: auto;
+  gap: 10px;
+}
+
+.login-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-title_btn {
+  border: 1px solid var(--grey);
+  padding: 5px 10px;
+}
+
+.active {
+  background-color: var(--blue);
+  color: var(--white);
 }
