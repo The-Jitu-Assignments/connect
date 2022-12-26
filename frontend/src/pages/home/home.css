@@ -1,7 +1,6 @@
 .home-main {
   display: flex;
   align-items: center;
-  background-color: violet;
   min-height: calc(100vh - 80px);
   gap: 10px;
 }
@@ -9,8 +8,7 @@
 .home-main_left {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  background-color: chartreuse;
+  gap: 40px;
   width: 50%;
 }
 
@@ -22,7 +20,7 @@
 
 .home-left_description {
   font-size: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .home-main_right {
@@ -31,4 +29,13 @@
 
 .home-main_right img {
   width: 100%;
+}
+
+.home-btn button {
+  border: none;
+  background-color: var(--blue);
+  padding: 10px 25px;
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
 }

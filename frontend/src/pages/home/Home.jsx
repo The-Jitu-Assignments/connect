@@ -18,7 +18,7 @@ const Home = () => {
             upcoming events, hackathons and resources which can help alumni be upto to date.
           </div>
           <div className='home-btn'>
-            Get Started
+            <button>Get Started</button>
           </div>
         </div>
         <div className='home-main_right'>
