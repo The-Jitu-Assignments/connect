@@ -5,10 +5,23 @@
   height: 80px;
   width: 100%;
   border-bottom: 1px solid var(--blue);
-  background-color: var(--blue);
 }
 
 .header-container h1 {
   font-style: italic;
   letter-spacing: 1px;
+}
+
+.header-auth {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-register {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
 }

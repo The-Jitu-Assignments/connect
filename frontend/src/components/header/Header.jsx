@@ -7,8 +7,9 @@ const Header = () => {
       <h1>
         EquiKonnect
       </h1>
-      <div>
-        Auth
+      <div className='header-auth'>
+        <div>Login</div>
+        <div className='header-register'>Register</div>
       </div>
     </div>
   )
