@@ -10,9 +10,8 @@
   flex-direction: column;
   border: 1px solid var(--grey);
   padding: 20px;
-  width: 40%;
+  width: 35%;
   height: auto;
-  gap: 10px;
 }
 
 .login-title {
@@ -30,4 +29,32 @@
 .active {
   background-color: var(--blue);
   color: var(--white);
+}
+
+.login-form_item {
+  margin-bottom: 20px;
+}
+
+.login-form_item label {
+  display: none;
+}
+
+.login-form_item input {
+  background-color: var(--grey);
+  width: 93%;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+}
+
+.login-btn {
+  background-color: var(--blue);
+  padding: 10px;
+  color: var(--white);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
