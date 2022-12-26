@@ -1,6 +1,9 @@
 import React from 'react'
 import Header from '../../components/header/Header'
 import './home.css'
+import { SiGoogleanalytics } from 'react-icons/si';
+import { BsChatRightTextFill } from 'react-icons/bs';
+import { FaHandshake, FaCreativeCommonsShare } from 'react-icons/fa';
 
 const Home = () => {
   return (
