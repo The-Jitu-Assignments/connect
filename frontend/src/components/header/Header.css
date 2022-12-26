@@ -1,5 +1,13 @@
 .header-container {
-  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: 80px;
   width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.header-container h1 {
+  font-style: italic;
+  letter-spacing: 1px;
 }
