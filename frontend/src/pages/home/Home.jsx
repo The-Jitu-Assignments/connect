@@ -31,16 +31,22 @@ const Home = () => {
       <div className='home-services'>
         <h2>Services</h2>
         <div className='home-cards'>
-          <div className="home-services_card">Item1</div>
           <div className="home-services_card">
-            EquiKonnect aim is to help equity alumni remain 
-            connected by allowing them to share their 
-            experiences, achievements and progress.
-            It will also be a nice platform which equity leaders can use 
-            to share any upcoming events, hackathons and resources which can help alumni be upto to date.
+            <div>A</div>
+            <div>B</div>
           </div>
-          <div className="home-services_card">Item3</div>
-          <div className="home-services_card">Item4</div>
+          <div className="home-services_card">
+            <div>A</div>
+            <div>B</div>
+          </div>
+          <div className="home-services_card">
+            <div>A</div>
+            <div>B</div>
+          </div>
+          <div className="home-services_card">
+            <div>A</div>
+            <div>B</div>
+          </div>
         </div>
       </div>
       <div>Footer</div>
