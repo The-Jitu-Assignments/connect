@@ -40,3 +40,26 @@
   cursor: pointer;
   font-size: 16px;
 }
+
+.home-services {
+  background-color: violet;
+  margin-bottom: 40px;
+}
+
+.home-services h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.home-services_card {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: yellow;
+}
