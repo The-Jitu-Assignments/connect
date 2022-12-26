@@ -32,20 +32,40 @@ const Home = () => {
         <h2>Services</h2>
         <div className='home-cards'>
           <div className="home-services_card">
-            <div>A</div>
-            <div>B</div>
+            <div>
+              <FaCreativeCommonsShare fontSize={"2em"} />
+            </div>
+            <div>
+              Share your experiences, achievements and progress.
+              Also get notified of any upcoming events and hackathons.
+            </div>
           </div>
           <div className="home-services_card">
-            <div>A</div>
-            <div>B</div>
+            <div>
+              <FaHandshake fontSize={"2em"} />
+            </div>
+            <div>
+              Connect with other alumni and follow other people
+              who you share interest or have same skills.
+            </div>
           </div>
           <div className="home-services_card">
-            <div>A</div>
-            <div>B</div>
+            <div>
+              <BsChatRightTextFill fontSize={"2em"} />
+            </div>
+            <div>
+              Chat with other alumni and get notified when you have new 
+              messages.
+            </div>
           </div>
           <div className="home-services_card">
-            <div>A</div>
-            <div>B</div>
+            <div>
+              <SiGoogleanalytics fontSize={"2em"} />
+            </div>
+            <div>
+              Get real time data of all the alumni in the system from
+              respective counties.
+            </div>
           </div>
         </div>
       </div>
