@@ -11,7 +11,15 @@ const Register = () => {
     name: '',
     email: '',
     userStatus: 'alumni',
-    password: ''
+    password: '',
+    phoneNumber: '',
+    county: '',
+    branchName: '',
+    school: '',
+    schoolLevel: 'University',
+    course: '',
+    period: '',
+    completionStatus: 'inSession'
   })
 
   const handlePrevious = () => {

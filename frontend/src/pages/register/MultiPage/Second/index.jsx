@@ -44,7 +44,50 @@ const Second = ({ userDetails, handlePrevious, setUserDetails }) => {
           </div>
         </div>
       </div>
-      <div>Form</div>
+      <div>
+        <div className='second-form_item'>
+          <label>Name</label>
+          <input 
+            type={"text"} 
+            value={userDetails.name}
+            name='name'
+            onChange={(e) => {
+              setUserDetails({
+                ...userDetails,
+                [e.target.name]: e.target.value
+              })
+            }}
+          />
+        </div>
+        <div className='second-form_item'>
+          <label>Name</label>
+          <input 
+            type={"text"} 
+            value={userDetails.name}
+            name='name'
+            onChange={(e) => {
+              setUserDetails({
+                ...userDetails,
+                [e.target.name]: e.target.value
+              })
+            }}
+          />
+        </div>
+        <div className='second-form_item'>
+          <label>Name</label>
+          <input 
+            type={"text"} 
+            value={userDetails.name}
+            name='name'
+            onChange={(e) => {
+              setUserDetails({
+                ...userDetails,
+                [e.target.name]: e.target.value
+              })
+            }}
+          />
+        </div>
+      </div>
     </div>
   )
 }
