@@ -54,7 +54,6 @@ const Register = () => {
         </div>
         <h3>Sign Up</h3>
         {multiRegistrationComponent()}
-        {/* {page > 0 && <button onClick={() => setPage(page - 1)}>Back</button>} */}
         <button onClick={handleSubmit}>
           {page === 0 ? 'Next' : 'Submit'}
         </button>
