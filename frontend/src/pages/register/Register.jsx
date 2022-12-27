@@ -14,11 +14,8 @@ const Register = () => {
     password: ''
   })
 
-  const handleChange = (e) => {
-    setUserDetails((userDetails) => ({
-      ...userDetails,
-      [e.target.nane]: e.target.value
-    }))
+  const handlePrevious = () => {
+    setPage(page - 1)
   }
 
   const multiRegistrationComponent = () => {
@@ -26,7 +23,7 @@ const Register = () => {
       case 0:
         return <First userDetails={userDetails} setUserDetails={setUserDetails} />;
       case 1:
-        return <Second userDetails={userDetails} setUserDetails={setUserDetails} />
+        return <Second userDetails={userDetails} setUserDetails={setUserDetails} handlePrevious={handlePrevious} />
       default:
         return <First userDetails={userDetails} setUserDetails={setUserDetails} />
     }
@@ -35,6 +32,7 @@ const Register = () => {
   const handleSubmit = () => {
     setPage(page + 1)
   };
+
 
   return (
     <div className='register-container'>
@@ -48,7 +46,7 @@ const Register = () => {
         </div>
         <h3>Sign Up</h3>
         {multiRegistrationComponent()}
-        {page > 0 && <button onClick={() => setPage(page - 1)}>Back</button>}
+        {/* {page > 0 && <button onClick={() => setPage(page - 1)}>Back</button>} */}
         <button onClick={handleSubmit}>
           {page === 0 ? 'Next' : 'Submit'}
         </button>

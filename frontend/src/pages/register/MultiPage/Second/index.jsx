@@ -1,11 +1,15 @@
 import React from 'react';
-import './Second.css'
+import './Second.css';
+import { BiArrowBack } from 'react-icons/bi'
 
-const Second = () => {
+const Second = ({ userDetails, handlePrevious }) => {
   return (
     <div>
       <div className='second-title'>
-        <div>Back</div>
+        <div className='second-back' onClick={handlePrevious}>
+          <BiArrowBack />
+          <span>Back</span>
+        </div>
         <div>
           <div>Email</div>
           <div>Admin</div>
