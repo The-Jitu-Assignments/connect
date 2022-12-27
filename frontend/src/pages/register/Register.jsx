@@ -7,6 +7,12 @@ import './Register.css'
 const Register = () => {
   const navigate = useNavigate();
   const [page, setPage] = useState(0);
+  const [userDetails, setUserDetails] = useState({
+    name: '',
+    email: '',
+    userStatus: 'alumni',
+    password: ''
+  })
 
   const multiRegistrationComponent = () => {
     switch (page) {
