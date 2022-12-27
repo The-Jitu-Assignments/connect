@@ -10,8 +10,8 @@ const Second = ({ userDetails, handlePrevious }) => {
           <BiArrowBack />
           <span>Back</span>
         </div>
-        <div>
-          <div>Email</div>
+        <div className='second_userDetails'>
+          <div>{userDetails.email}</div>
           <div>Admin</div>
         </div>
       </div>
