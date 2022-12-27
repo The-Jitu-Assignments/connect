@@ -2,6 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blue;
   height: 100vh;
+}
+
+.register-form {
+  border: 1px solid var(--grey);
+  padding: 20px;
+  width: 40%;
+  height: auto;
 }
