@@ -14,8 +14,18 @@
   cursor: pointer;
 }
 
-.second_userDetails {
+.second-userDetails {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.second-userDetails_email {
+  font-weight: 700;
+}
+
+.second-radio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
