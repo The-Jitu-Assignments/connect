@@ -29,3 +29,23 @@
   align-items: center;
   gap: 20px;
 }
+
+.second-form_item {
+  margin-bottom: 20px;
+}
+
+.second-form_item label {
+  display: none;
+}
+
+.second-form_item input {
+  width: 94%;
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  background-color: var(--grey);
+}
+
+.second-form_item input::placeholder {
+  color: var(--white);
+}
