@@ -11,7 +11,7 @@ const Login = () => {
           <h2 onClick={() => navigate('/')}>EquiKonnect</h2>
           <div>
             <span className='login-title_btn active'>Login</span>
-            <span className='login-title_btn'>Register</span>
+            <span className='login-title_btn' onClick={() => navigate('/register')}>Register</span>
           </div>
         </div>
         <h3>Sign In</h3>

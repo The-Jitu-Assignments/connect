@@ -1,0 +1,7 @@
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  height: 100vh;
+}
