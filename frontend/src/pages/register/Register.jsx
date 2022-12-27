@@ -14,6 +14,13 @@ const Register = () => {
     password: ''
   })
 
+  const handleChange = (e) => {
+    setUserDetails((userDetails) => ({
+      ...userDetails,
+      [e.target.nane]: e.target.value
+    }))
+  }
+
   const multiRegistrationComponent = () => {
     switch (page) {
       case 0:
