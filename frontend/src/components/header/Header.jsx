@@ -11,7 +11,7 @@ const Header = () => {
       </h1>
       <div className='header-auth'>
         <div className='header-login' onClick={() => navigate('/login')}>Login</div>
-        <div className='header-register'>Register</div>
+        <div className='header-register' onClick={() => navigate('/register')}>Register</div>
       </div>
     </div>
   )
