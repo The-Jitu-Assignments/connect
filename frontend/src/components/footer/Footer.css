@@ -1,5 +1,7 @@
 .footer-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  align-items: center;
+  background-color: thistle;
+  height: 60px;
 }
