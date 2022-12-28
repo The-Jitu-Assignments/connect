@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   return (
     <div className='layout'>
       <div className='layout-header'>
-        <span>
+        <span className='layout-menu'>
           <FcMenu fontSize={"2em"} />
         </span>
         <Header />
