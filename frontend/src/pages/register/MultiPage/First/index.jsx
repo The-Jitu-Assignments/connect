@@ -1,6 +1,6 @@
 import React from 'react'
 
-const First = ({ userDetails, setUserDetails }) => {
+const First = ({ userDetails, handleChange }) => {
   return (
     <div>
       <label>Email</label>
@@ -9,12 +9,7 @@ const First = ({ userDetails, setUserDetails }) => {
         name='email'
         placeholder='Enter your email address' 
         value={userDetails.email}
-        onChange={(e) => {
-          setUserDetails({
-            ...userDetails,
-            [e.target.name]: e.target.value
-          })
-        }}
+        onChange={handleChange}
       />
     </div>
   )

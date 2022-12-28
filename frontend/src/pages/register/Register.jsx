@@ -37,11 +37,11 @@ const Register = () => {
   const multiRegistrationComponent = () => {
     switch (page) {
       case 0:
-        return <First userDetails={userDetails} setUserDetails={setUserDetails} handleChange={handleChange} />;
+        return <First userDetails={userDetails} handleChange={handleChange} />;
       case 1:
-        return <Second userDetails={userDetails} setUserDetails={setUserDetails} handlePrevious={handlePrevious} />
+        return <Second userDetails={userDetails} handleChange={handleChange} handlePrevious={handlePrevious} />
       default:
-        return <First userDetails={userDetails} setUserDetails={setUserDetails} />
+        return <First userDetails={userDetails} handleChange={handleChange} />
     }
   };
 
