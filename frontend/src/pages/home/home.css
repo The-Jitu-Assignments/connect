@@ -19,12 +19,28 @@
 
 .home-header_search {
   display: flex;
+  align-items: center;
   flex-basis: 60%;
-  gap: 20px;
+  gap: 10px;
 }
 
 .home-header_search input {
   flex-basis: 100%;
+  outline: none;
+  border: none;
+  background-color: var(--grey);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.home-search_btn {
+  background-color: var(--blue);
+  padding: 8px 15px;
+  font-size: 16px;
+  color: var(--white);
+  outline: none;
+  border:none;
+  border-radius: 5px;
 }
 
 .home-header_btns {

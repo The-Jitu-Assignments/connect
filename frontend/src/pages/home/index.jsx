@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../../components/button';
 import './home.css'
 
 const HomePage = () => {
@@ -7,8 +8,8 @@ const HomePage = () => {
       <div className='home-header'>
         <div className='home-header_top'>
           <div className='home-header_search'>
-            <input type={"text"} placeholder='Search a post' />
-            <span>Search</span>
+            <input type="search" placeholder='Search a post' />
+            <Button text={"Search"} className={"home-search_btn"} />
           </div>
           <div className='home-header_btns'>
             <span>Filter</span>
