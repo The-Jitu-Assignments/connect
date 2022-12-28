@@ -9,7 +9,7 @@
 .home-header {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .home-header_top {
@@ -66,6 +66,23 @@
   align-items: center;
 }
 
+.home-filter_box {
+  display: flex;
+  gap: 20px;
+}
+
+.home-filter_item {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-filter_item:hover {
+  background-color: var(--grey);
+  letter-spacing: 1px;
+}
+
 .home-content {
   display: flex;
   flex-direction: column;
@@ -77,4 +94,5 @@
 .test {
   background-color: yellowgreen;
   height: 10rem;
+  padding: 40px 10px;
 }

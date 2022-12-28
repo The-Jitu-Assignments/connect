@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '../../components/button';
 import { BsFilter } from 'react-icons/bs'
 import './home.css'
 
 const HomePage = () => {
+  const [show, setShow] = useState(false);
   return (
     <div className='home-container'>
       <div className='home-header'>
@@ -13,7 +14,7 @@ const HomePage = () => {
             <Button text={"Search"} className={"home-search_btn"} />
           </div>
           <div className='home-header_btns'>
-            <div className='home-filter_btn'>
+            <div className='home-filter_btn' onClick={() => setShow(!show)}>
               Filter
               <span>
                 <BsFilter />
@@ -22,7 +23,22 @@ const HomePage = () => {
             <Button text={"Add Post"} className={"home-search_btn"} />
           </div>
         </div>
-        <div>Categories</div>
+        {show && (
+          <div className='home-filter_box'>
+            <div className="home-filter_item">
+              All
+            </div>
+            <div className="home-filter_item">
+              Hackathons
+            </div>
+            <div className="home-filter_item">
+              Events
+            </div>
+            <div className="home-filter_item">
+              Achievements
+            </div>
+          </div>
+        )}
       </div>
       <div className='home-content'>
         <div className="test">item1</div>
