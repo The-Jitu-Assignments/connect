@@ -1,10 +1,13 @@
 .layout {
   min-height: 100vh;
-  background-color: tomato;
+}
+
+.layout-header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .main-content {
-  background-color: turquoise;
   height: calc(100vh - 140px);
-  /* overflow-y: scroll; */
 }
