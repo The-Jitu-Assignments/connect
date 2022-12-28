@@ -80,7 +80,6 @@
 
 .home-filter_item:hover {
   background-color: var(--grey);
-  letter-spacing: 1px;
 }
 
 .home-content {
