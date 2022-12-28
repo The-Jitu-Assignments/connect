@@ -4,7 +4,7 @@ import { BiArrowBack } from 'react-icons/bi'
 import AlumniForm from '../../../../components/forms/alumni';
 import AdminForm from '../../../../components/forms/admin';
 
-const Second = ({ userDetails, handlePrevious, setUserDetails }) => {
+const Second = ({ userDetails, handlePrevious, handleChange }) => {
   return (
     <div>
       <div className='second-title'>
@@ -21,12 +21,7 @@ const Second = ({ userDetails, handlePrevious, setUserDetails }) => {
                 value={"alumni"} 
                 name='userStatus' 
                 checked={userDetails.userStatus === 'alumni'}
-                onChange={(e) => {
-                  setUserDetails({
-                    ...userDetails,
-                    [e.target.name]: e.target.value
-                  })
-                }}
+                onChange={handleChange}
               /> Alumni
             </div>
             <div>
@@ -35,21 +30,16 @@ const Second = ({ userDetails, handlePrevious, setUserDetails }) => {
                 value={"admin"} 
                 name='userStatus'
                 checked={userDetails.userStatus === 'admin'} 
-                onChange={(e) => {
-                  setUserDetails({
-                    ...userDetails,
-                    [e.target.name]: e.target.value
-                  })
-                }}
+                onChange={handleChange}
               /> Admin
             </div>
           </div>
         </div>
       </div>
       {userDetails.userStatus === 'alumni' ? ( 
-        <AlumniForm userDetails={userDetails} setUserDetails={setUserDetails} />
+        <AlumniForm userDetails={userDetails} handleChange={handleChange} />
       ) : (
-        <AdminForm userDetails={userDetails} setUserDetails={setUserDetails} />
+        <AdminForm userDetails={userDetails} handleChange={handleChange} />
       )}
     </div>
   )
