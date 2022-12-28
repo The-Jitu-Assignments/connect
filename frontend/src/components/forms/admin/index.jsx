@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AdminForm = ({ userDetails, setUserDetails }) => {
+const AdminForm = ({ userDetails, handleChange }) => {
   return (
     <div>
       <div className='second-form_item'>
@@ -10,12 +10,7 @@ const AdminForm = ({ userDetails, setUserDetails }) => {
           value={userDetails.name}
           name='name'
           placeholder='Enter your name'
-          onChange={(e) => {
-            setUserDetails({
-              ...userDetails,
-              [e.target.name]: e.target.value
-            })
-          }}
+          onChange={handleChange}
         />
       </div>
       <div className='second-form_item'>
@@ -25,12 +20,7 @@ const AdminForm = ({ userDetails, setUserDetails }) => {
           value={userDetails.password}
           name='password'
           placeholder='Enter your password'
-          onChange={(e) => {
-            setUserDetails({
-              ...userDetails,
-              [e.target.name]: e.target.value
-            })
-          }}
+          onChange={handleChange}
         />
       </div>
     </div>
