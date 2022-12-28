@@ -47,10 +47,6 @@
   border-radius: 5px;
 }
 
-.second-form_item input::placeholder {
-  color: var(--white);
-}
-
 .radioInputs {
   margin-bottom: 20px;
 }
