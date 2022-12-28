@@ -4,6 +4,7 @@ import Header from '../components/header/Header';
 import './layout.css'
 import { FcMenu } from 'react-icons/fc'
 import Modal from '../components/modal';
+import Sidebar from '../components/sidebar';
 
 const Layout = ({ children }) => {
   const [open, setOpen] = useState(false);
@@ -15,7 +16,11 @@ const Layout = ({ children }) => {
         </span>
         <Header />
       </div>
-      <Modal open={open} close={() => setOpen(false)} />
+      <Modal 
+        open={open} 
+        close={() => setOpen(false)} 
+        content={<Sidebar close={() => setOpen(false)}  />}
+      />
       <div className='main-content'>
         {children}
       </div>

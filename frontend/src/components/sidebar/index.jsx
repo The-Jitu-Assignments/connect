@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './sidebar.css'
 
-const Sidebar = () => {
+const Sidebar = ({ close }) => {
   return (
-    <div>Sidebar</div>
+    <div onClick={close} className='sidebar'>Sidebar</div>
   )
 }
 

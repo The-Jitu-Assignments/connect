@@ -1,0 +1,6 @@
+.sidebar {
+  background-color: var(--white);
+   width: 20%;
+   min-height: 100%;
+   box-shadow: 1px 0px 30px -3px rgba(0,0,0,0.75);
+}
