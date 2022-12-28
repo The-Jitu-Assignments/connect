@@ -1,12 +1,12 @@
 import React from 'react'
 import Header from '../../components/header/Header'
-import './home.css'
+import './landing.css'
 import { SiGoogleanalytics } from 'react-icons/si';
 import { BsChatRightTextFill } from 'react-icons/bs';
 import { FaHandshake, FaCreativeCommonsShare } from 'react-icons/fa';
 import Footer from '../../components/footer/Footer';
 
-const Home = () => {
+const LandingPage = () => {
   return (
     <div>
       <Header />
@@ -77,4 +77,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default LandingPage
