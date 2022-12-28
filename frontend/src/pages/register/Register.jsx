@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Button from '../../components/button';
 import First from './MultiPage/First';
 import Second from './MultiPage/Second';
 import './Register.css'
@@ -62,9 +63,7 @@ const Register = () => {
         </div>
         <h3>Sign Up</h3>
         {multiRegistrationComponent()}
-        <button onClick={handleSubmit}>
-          {page === 0 ? 'Next' : 'Submit'}
-        </button>
+        <Button className={"submit-form"} text={page === 0 ? 'Next' : 'Submit'} onClick={handleSubmit} />
       </div>
     </div>
   )

@@ -16,7 +16,7 @@ const AdminForm = ({ userDetails, handleChange }) => {
       <div className='second-form_item'>
         <label>Password</label>
         <input 
-          type={"text"} 
+          type={"password"} 
           value={userDetails.password}
           name='password'
           placeholder='Enter your password'
