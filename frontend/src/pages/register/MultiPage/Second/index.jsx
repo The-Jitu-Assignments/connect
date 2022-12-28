@@ -2,6 +2,7 @@ import React from 'react';
 import './Second.css';
 import { BiArrowBack } from 'react-icons/bi'
 import AlumniForm from '../../../../components/forms/alumni';
+import AdminForm from '../../../../components/forms/admin';
 
 const Second = ({ userDetails, handlePrevious, setUserDetails }) => {
   return (
@@ -47,9 +48,11 @@ const Second = ({ userDetails, handlePrevious, setUserDetails }) => {
       </div>
       {userDetails.userStatus === 'alumni' ? ( 
         <AlumniForm userDetails={userDetails} setUserDetails={setUserDetails} />
-      ) : (<div>Admin</div>)}
+      ) : (
+        <AdminForm userDetails={userDetails} setUserDetails={setUserDetails} />
+      )}
     </div>
   )
 }
 
-export default Second
+export default Second;
