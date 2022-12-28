@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../../components/button';
+import { BsFilter } from 'react-icons/bs'
 import './home.css'
 
 const HomePage = () => {
@@ -12,8 +13,13 @@ const HomePage = () => {
             <Button text={"Search"} className={"home-search_btn"} />
           </div>
           <div className='home-header_btns'>
-            <span>Filter</span>
-            <span>Add Post</span>
+            <div className='home-filter_btn'>
+              Filter
+              <span>
+                <BsFilter />
+              </span>
+            </div>
+            <Button text={"Add Post"} className={"home-search_btn"} />
           </div>
         </div>
         <div>Categories</div>
