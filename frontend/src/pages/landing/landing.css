@@ -1,37 +1,37 @@
-.home-main {
+.landing-main {
   display: flex;
   align-items: center;
   min-height: calc(100vh - 80px);
   gap: 10px;
 }
 
-.home-main_left {
+.landing-main_left {
   display: flex;
   flex-direction: column;
   gap: 40px;
   width: 50%;
 }
 
-.home-left_title {
+.landing-left_title {
   font-size: 42px;
   letter-spacing: 2px;
   font-weight: 600;
 }
 
-.home-left_description {
+.landing-left_description {
   font-size: 16px;
   letter-spacing: 2px;
 }
 
-.home-main_right {
+.landing-main_right {
   width: 50%;
 }
 
-.home-main_right img {
+.landing-main_right img {
   width: 100%;
 }
 
-.home-btn button {
+.landing-btn button {
   border: none;
   background-color: var(--blue);
   padding: 10px 25px;
@@ -41,23 +41,23 @@
   font-size: 16px;
 }
 
-.home-services {
+.landing-services {
   margin-bottom: 40px;
 }
 
-.home-services h2 {
+.landing-services h2 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.home-cards {
+.landing-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
-.home-services_card {
+.landing-services_card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,6 +69,6 @@
   letter-spacing: 1px;
 }
 
-.home-services_card:hover {
+.landing-services_card:hover {
   background-color: var(--darkGrey);
 }
