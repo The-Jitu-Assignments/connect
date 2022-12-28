@@ -44,6 +44,7 @@
   outline: none;
   border: none;
   background-color: var(--grey);
+  border-radius: 5px;
 }
 
 .second-form_item input::placeholder {
