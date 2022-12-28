@@ -3,7 +3,7 @@ import './sidebar.css'
 
 const Sidebar = ({ close }) => {
   return (
-    <div className='sidebar'>
+    <div className='sidebar' onClick={(e) => e.stopPropagation()}>
       <div className='sidebar-header'>
         <span onClick={close}>X</span>
       </div>
