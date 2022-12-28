@@ -6,9 +6,14 @@ const HomePage = () => {
     <div className='home-container'>
       <div className='home-header'>
         <div className='home-header_top'>
-          <div>Search</div>
-          <div>Filter</div>
-          <div>Add a posts</div>
+          <div className='home-header_search'>
+            <input type={"text"} placeholder='Search a post' />
+            <span>Search</span>
+          </div>
+          <div className='home-header_btns'>
+            <span>Filter</span>
+            <span>Add Post</span>
+          </div>
         </div>
         <div>Categories</div>
       </div>
