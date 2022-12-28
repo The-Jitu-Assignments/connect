@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import Header from '../../components/header/Header'
 import './landing.css'
 import { SiGoogleanalytics } from 'react-icons/si';
@@ -7,6 +8,7 @@ import { FaHandshake, FaCreativeCommonsShare } from 'react-icons/fa';
 import Footer from '../../components/footer/Footer';
 
 const LandingPage = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <Header />
@@ -22,7 +24,7 @@ const LandingPage = () => {
             upcoming events, hackathons and resources which can help alumni be upto to date.
           </div>
           <div className='landing-btn'>
-            <button>Get Started</button>
+            <button onClick={() => navigate('/home')}>Get Started</button>
           </div>
         </div>
         <div className='landing-main_right'>
