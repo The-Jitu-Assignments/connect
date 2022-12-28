@@ -26,10 +26,18 @@ const Register = () => {
     setPage(page - 1)
   }
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setUserDetails((userDetails) => ({
+      ...userDetails,
+      [name]: value
+    }))
+  }
+
   const multiRegistrationComponent = () => {
     switch (page) {
       case 0:
-        return <First userDetails={userDetails} setUserDetails={setUserDetails} />;
+        return <First userDetails={userDetails} setUserDetails={setUserDetails} handleChange={handleChange} />;
       case 1:
         return <Second userDetails={userDetails} setUserDetails={setUserDetails} handlePrevious={handlePrevious} />
       default:
