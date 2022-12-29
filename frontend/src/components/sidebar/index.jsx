@@ -9,26 +9,26 @@ const Sidebar = ({ close }) => {
     navigate(path);
     close();
   };
-  
+
   return (
     <div className='sidebar' onClick={(e) => e.stopPropagation()}>
       <div className='sidebar-header'>
         <span onClick={close}>X</span>
       </div>
       <div className='sidebar-item_box'>
-        <div className="sidebar-item">
+        <div className="sidebar-item" onClick={() => handleNavigate('/home')}>
           Home
         </div>
-        <div className="sidebar-item">
+        <div className="sidebar-item" onClick={() => handleNavigate('/message')}>
           Messages
         </div>
-        <div className="sidebar-item">
+        <div className="sidebar-item" onClick={() => handleNavigate('/notification')}>
           Notifications
         </div>
-        <div className="sidebar-item">
+        <div className="sidebar-item" onClick={() => handleNavigate('/profile')}>
           Profile
         </div>
-        <div className="sidebar-item">
+        <div className="sidebar-item" onClick={() => handleNavigate('/dataAndAnalytics')}>
           Data & Analytics
         </div>
       </div>
