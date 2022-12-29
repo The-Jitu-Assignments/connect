@@ -3,6 +3,24 @@ import Button from '../../components/button';
 import './analytics.css'
 
 const DataAndAnalyticsPage = () => {
+  const options = [
+    {
+      name: 'Select County...',
+      value: null
+    },
+    {
+      name: 'Nairobi',
+      value: 'nairobi',
+    },
+    {
+      name: 'Mombasa',
+      value: 'mombasa',
+    },
+    {
+      name: 'Kisumu',
+      value: 'kisumu'
+    }
+  ]
   return (
     <div className='analytics-container'>
       <div className='analytics-header'>
@@ -10,7 +28,15 @@ const DataAndAnalyticsPage = () => {
           <input type="search" placeholder='Search a post' />
           <Button text={"Search"} className={"home-search_btn"} />
         </div>
-        <div>Filter</div>
+        <div className='analytics-select'>
+          <select>
+            {options.map((item) => (
+              <option>
+                {item.name}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
       <div>
         <div className="test">Item1</div>
