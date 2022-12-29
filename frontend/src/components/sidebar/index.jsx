@@ -1,7 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './sidebar.css'
 
 const Sidebar = ({ close }) => {
+  const navigate = useNavigate();
+
+  const handleNavigate = path => {
+    navigate(path);
+    close();
+  };
+  
   return (
     <div className='sidebar' onClick={(e) => e.stopPropagation()}>
       <div className='sidebar-header'>
