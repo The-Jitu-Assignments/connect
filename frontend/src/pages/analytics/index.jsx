@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './analytics.css'
 
 const DataAndAnalyticsPage = () => {
   return (
-    <div>DataAndAnalyticsPage</div>
+    <div className='analytics-container'>DataAndAnalyticsPage</div>
   )
 }
 
