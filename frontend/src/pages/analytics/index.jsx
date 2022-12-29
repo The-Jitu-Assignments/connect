@@ -1,11 +1,15 @@
 import React from 'react';
+import Button from '../../components/button';
 import './analytics.css'
 
 const DataAndAnalyticsPage = () => {
   return (
     <div className='analytics-container'>
-      <div>
-        <div>Search</div>
+      <div className='analytics-header'>
+        <div className='home-header_search'>
+          <input type="search" placeholder='Search a post' />
+          <Button text={"Search"} className={"home-search_btn"} />
+        </div>
         <div>Filter</div>
       </div>
       <div>

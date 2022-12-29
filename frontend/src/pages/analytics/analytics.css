@@ -6,3 +6,9 @@
   height: 100%;
   overflow-y: scroll;
 }
+
+.analytics-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
